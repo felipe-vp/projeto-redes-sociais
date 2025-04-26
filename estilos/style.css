@@ -12,18 +12,29 @@ html, body{
     background-color: black;
 }
 
+body{
+    background: url("../imagens/fundo-madeira.jpg") no-repeat top center;
+    /*
+        top: A borda superior da imagem de fundo será alinhada com a borda superior do elemento. Em outras palavras, a imagem começará a ser exibida do topo do elemento.
+
+        center: A imagem de fundo será centralizada horizontalmente dentro do elemento. O ponto central horizontal da imagem coincidirá com o ponto central horizontal do elemento.
+    */
+    background-size: cover; /* a imagem cobre todo o fundo*/
+    background-attachment: fixed; /* sem barra de rolagem*/
+}
+
 main{
     height: 100vh;
-    background-color: green;
     position: relative;
 }
 
 section#telefone{
-    height: 500px;
-    width: 500px;
-    background-color: yellow;
+    height: 627px;
+    width: 311px;
+    
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: url("../imagens/frame-iphone.png") no-repeat;
 }
